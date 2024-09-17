@@ -46,12 +46,13 @@ public class PlaceComponentMenuBar extends JPanel{
 		agregarU.addActionListener(new ActionListener() {			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//PlaceComponentCenter centro = new PlaceComponentCenter(); 
-				FormAddUser formUser = new  FormAddUser(); 
+		
+			 
 				center.removeAll();
 				center.setSize(PlaceComponentCenter.ancho, PlaceComponentCenter.alto);
-				center.add(formUser);
+			 
 				center.repaint();
+				center.revalidate();
 				center.setVisible(true);
 				center.setEnabled(true);
 				

@@ -58,7 +58,7 @@ public class FormAddUser extends JPanel{
 				String documento = txtdocumento.getText();
 				String rol = txtrol.getText();
 				System.out.println("Los datos son:\n" + usuariotext +"\n" + password + "\n"+documento+"\n"+rol);
-				
+				limpiarTxt();
 			}
 		});
 		btnborrar   = new JButton("Limpiar");
@@ -67,23 +67,14 @@ public class FormAddUser extends JPanel{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				txtUsuario.setText("");
-				txtPassword.setText("");
-				txtdocumento.setText("");
-				txtrol.setText("");
+				limpiarTxt();
+				System.out.println("Campos vaciados");
 				
 			}
 		});
 		btncancelar = new JButton("Cancelar");     
 		btncancelar.setBounds(200, 200, 100, 25);
-		btncancelar.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				
-			}
-		});
+
 		
 		
 		add(titulo);      
@@ -102,6 +93,13 @@ public class FormAddUser extends JPanel{
 
 		
 		
+	}
+	
+	private void limpiarTxt() {
+		txtUsuario.setText("");
+		txtPassword.setText("");
+		txtdocumento.setText("");
+		txtrol.setText("");
 	}
 
 }

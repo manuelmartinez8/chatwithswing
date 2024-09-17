@@ -34,8 +34,8 @@ public class PlaceComponentCenter extends JPanel{
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					//PlaceComponentCenter centro = new PlaceComponentCenter(); 
-					FormAddUser formUser = new  FormAddUser(); 
-					changeView(formUser);
+					//FormAddUser formUser = new  FormAddUser(); 
+					//changeView(formUser);
 					
 				}
 			});

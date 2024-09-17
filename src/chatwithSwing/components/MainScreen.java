@@ -28,16 +28,14 @@ public class MainScreen extends JFrame{
 	}
 	
 	private void initComponents() {
-		setBounds(550, 400,450,300);
-		//PlaceComponentMainScreen lamina = new PlaceComponentMainScreen();
+		
+		setBounds(550, 400,450,300);		
 		PlaceComponentCenter centro = new PlaceComponentCenter();
 		PlaceComponentMenuBar menuBarComponents = new PlaceComponentMenuBar(centro);
 		
-		setLocationRelativeTo(null);
-		//
+		setLocationRelativeTo(null);		
         add(menuBarComponents, BorderLayout.NORTH);
-        add(centro,BorderLayout.CENTER);
-        //add(welcomeLabel);
+        add(centro,BorderLayout.CENTER);       
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 

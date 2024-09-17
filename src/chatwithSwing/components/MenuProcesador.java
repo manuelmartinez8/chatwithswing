@@ -24,7 +24,7 @@ public class MenuProcesador extends JFrame{
 	}
 	
 	class LaminaProcesador extends JPanel{
-		JTextPane miarea;
+		JTextPane miareaDetEXTO;
 		public LaminaProcesador() {
 			setLayout(new BorderLayout());
 			JPanel laminaMenu = new JPanel();
@@ -43,7 +43,7 @@ public class MenuProcesador extends JFrame{
 				
 				@Override
 				public void actionPerformed(ActionEvent e) {
-					miarea.setFont(new Font("Verdana", Font.PLAIN, 14));
+					miareaDetEXTO.setFont(new Font("Verdana", Font.PLAIN, 14));
 					
 				}
 			});
@@ -69,8 +69,8 @@ public class MenuProcesador extends JFrame{
 			
 			laminaMenu.add(miBarra);
 			add(laminaMenu, BorderLayout.NORTH);
-			  miarea = new JTextPane();
-			add(miarea, BorderLayout.CENTER);
+			  miareaDetEXTO = new JTextPane();
+			add(miareaDetEXTO, BorderLayout.CENTER);
 			
 			
 		}
@@ -79,7 +79,7 @@ public class MenuProcesador extends JFrame{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				miarea.setFont(new Font("Courier", Font.PLAIN, 12));
+				miareaDetEXTO.setFont(new Font("Courier", Font.PLAIN, 12));
 				
 			}
 			

@@ -1,9 +1,9 @@
-package chatwithSwing.application;
+package app;
 
 
 
 
-import chatwithSwing.components.Principal;
+import components.Principal;
 
  
 public class App {

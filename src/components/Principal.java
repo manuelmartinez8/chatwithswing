@@ -1,4 +1,4 @@
-package chatwithSwing.components;
+package components;
 
 import java.awt.CardLayout;
 import java.awt.Color;

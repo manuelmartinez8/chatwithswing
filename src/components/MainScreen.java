@@ -1,4 +1,4 @@
-package chatwithSwing.components;
+package components;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
